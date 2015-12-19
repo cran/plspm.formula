@@ -1,0 +1,2 @@
+export("plspm.formula","plspm.params")
+import(plspm)
