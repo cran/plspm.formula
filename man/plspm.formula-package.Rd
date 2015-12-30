@@ -2,10 +2,9 @@
 \alias{plspm.formula-package}
 \alias{plspm.formula.package}
 \docType{package}
-\title{\packageTitle{plspm.formula}}
+\title{Formula Based PLS Path Modeling}
 
-\description{
-\packageDescription{plspm.formula}
+\description{The main objective is to make easy the PLS Path Modeling with R using the package 'plspm'. It compute automatically the inner matrix and the outer list the 'plspm' function need simply by specify the model using formulas.
 }
 
 \details{
@@ -13,8 +12,8 @@ A formula based version of the package 'plspm'.The main fonction is 'plspm.formu
 }
 
 \author{
-\packageAuthor{plspm.formula} 
-Maintainer: \packageMaintainer{plspm.formula}
+ ACHIEPO Odilon Yapo M. [aut, cre]
+ ACHIEPO Odilon Yapo M. <kingodilon@gmail.com>
 }
 
 \references{

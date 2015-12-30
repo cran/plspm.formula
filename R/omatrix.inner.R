@@ -40,8 +40,7 @@ function (latents, latlist, mat = TRUE, iplot = TRUE)
     gammaj <- 1 - as.numeric(latents %in% vlgauche)
     Fj <- as.vector(calc.nfois.exo(latents))
     Kj <- as.vector(calc.equ.exo(latents))
-    muj <- 10^7 * Ej * thetaj + (10^5 * Ej - Fj) * (1 - thetaj - 
-        gammaj) + (10^3 * Fj + Kj) * gammaj
+    muj <- 10^7*Ej*thetaj+(10^5*Ej-10*Fj+Kj)*(1-thetaj-gammaj)-(10^3*Fj-Kj)*gammaj
     olatents <- latents[order(muj)]
     reslist <- list(mu = muj, ordre = olatents)
     if (mat) {
